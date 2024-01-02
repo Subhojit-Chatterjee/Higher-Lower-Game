@@ -26,6 +26,9 @@ def game():
     celebrity_1 = pick_celebrity()
     celebrity_2 = pick_celebrity()
 
+    if celebrity_1 == celibrity_2:
+        celebrity_2 = pick_celebrity()
+    
     while not game_over:
         print("Compare A:" + print_format(celebrity_1) + art.vs + "B: " + print_format(celebrity_2))
 
